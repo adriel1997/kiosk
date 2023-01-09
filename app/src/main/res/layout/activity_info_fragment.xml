@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adriealle.kiosk.MainActivity"
+    android:orientation="horizontal"
+    android:layout_weight="5">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/info_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" M3M India Pvt. Ltd."
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/info_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address :  "
+                android:textStyle="bold"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paras Twin Towers, Tower B, 6th Floor,
+Golf Course Road, Sector 54, Gurgaon-122002,India"
+                android:textColor="#000000"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/info_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact :  "
+                android:textStyle="bold"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Office : +91 124 4732000 ,
+ Toll Free : 1800 123 3333"
+                android:textColor="#000000"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/info_leasing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leasing Enquiries :  "
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Leasing@M3MIndia.com ,
+Phone : +91 9582 794 662
+
+"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:paddingLeft="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/info_sales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Enquiries :  "
+                android:textStyle="bold"
+                android:textColor="#000000"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Sales@M3MIndia.com ,
+Phone : +91 90691 45300
+"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sales Gallery :  "
+                android:textStyle="bold"
+                android:textColor="#000000"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Experia,
+12th Floor, M3M Cosmopolitan,
+Sector – 66, Gurugram, Haryana - 122002
+
+"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adriealle.kiosk.info_fragment"
+    android:layout_weight="5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" M3M India Pvt. Ltd."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+      &lt;!&ndash;  <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+android:padding="10dp"
+            android:background="@drawable/m3m_logo" />&ndash;&gt;
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/info_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address :  "
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paras Twin Towers, Tower B, 6th Floor,
+Golf Course Road, Sector 54, Gurgaon-122002,India"
+            android:textColor="#000000"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/info_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact :  "
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Office : +91 124 4732000 ,
+ Toll Free : 1800 123 3333"
+            android:textColor="#000000"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/info_sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Enquiries :  "
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sales@M3MIndia.com ,
+Phone : +91 90691 45300
+"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/info_leasing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leasing Enquiries :  "
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Leasing@M3MIndia.com ,
+Phone : +91 9582 794 662
+
+"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sales Gallery :  "
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Experia,
+12th Floor, M3M Cosmopolitan,
+Sector – 66, Gurugram, Haryana - 122002
+
+"
+            android:padding="10dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+-->

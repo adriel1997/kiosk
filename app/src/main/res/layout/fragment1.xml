@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.adriealle.kiosk.fragment1"
+
+    android:id="@+id/fragment1">
+
+
+    <LinearLayout
+        android:id="@+id/fra1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="5 ">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/text1"
+            >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/m3m_logo"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/image1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Store or Service"
+
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+            <!--
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="abcd"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Name"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Shop no."
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Floor Number"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:text="Category"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/result"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="2.7"
+         android:layout_marginTop="10dp"
+         android:layout_marginRight="10dp"
+         >
+ &lt;!&ndash;
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="300dp"
+
+             android:background="@drawable/m3m" />&ndash;&gt;
+     </LinearLayout>-->
+
+    <!--<include layout="@layout/search_fragment"
+        android:visibility="gone"/>-->
+</LinearLayout>

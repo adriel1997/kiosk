@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adriealle.kiosk.MainActivity"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:layout_weight="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+
+
+        <RelativeLayout
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="3.0"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="672dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/m3m_logo"
+                        android:stateListAnimator="@null"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Select Store or Service"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="30dp"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp" />
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="672dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image"
+                    android:paddingLeft="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="180dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+
+
+                    <ImageView
+
+
+                        android:layout_width="660dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/m3m2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            >
+
+
+            <LinearLayout
+
+                android:id="@+id/amenities_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <Button
+                    android:id="@+id/amenities1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@drawable/medical_room"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/amenities2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/kids"
+                    />
+
+
+
+                <Button
+
+                    android:id="@+id/amenities5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/courier"
+                    />
+
+                <Button
+
+                    android:id="@+id/amenities6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/atm"
+                    />
+
+                <Button
+
+                    android:id="@+id/amenities7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/info_desk"
+                    />
+
+                <Button
+
+                    android:id="@+id/amenities8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/kids_play_area"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/amenities9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pharmacy"
+                    />
+
+                <Button
+
+                    android:id="@+id/amenities10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/valet"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dining_layout">
+
+                <Button
+                    android:id="@+id/dining1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="65dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@drawable/cafe"
+                    />
+
+
+
+
+                <Button
+                    android:id="@+id/dining2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/food_court"
+                    />
+
+
+                <Button
+                    android:id="@+id/dining3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/restaurant"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/search_by_category">
+
+
+                <Button
+                    android:id="@+id/category1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@drawable/automobile"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/category2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/beauty"
+                    />
+
+                <Button
+
+                    android:id="@+id/category3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/books"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/category4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/electronics"
+                    />
+
+                <Button
+
+                    android:id="@+id/category5"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/entertainment"
+                    />
+
+
+
+                <Button
+
+                    android:id="@+id/category6"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/eyewear"
+                    />
+
+                <Button
+
+                    android:id="@+id/category7"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/food_and_beverage"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/category8"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/foot_wear"
+                    />
+
+                <Button
+
+                    android:id="@+id/category9"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_furnishing"
+                    />
+
+                <Button
+
+                    android:id="@+id/category10"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/hyper_market"
+                    />
+
+                <Button
+
+                    android:id="@+id/category11"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/jewellery"
+                    />
+
+
+
+                <Button
+
+                    android:id="@+id/category13"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/luggage"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/floors_category">
+
+                <Button
+                    android:id="@+id/floor1"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="310dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:background="@drawable/floor0"
+                    />
+
+
+                <Button
+
+                    android:id="@+id/floor2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/floor1"
+                    />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <!-- </LinearLayout>-->
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.20">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:layout_marginStart="85dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"  />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:id="@+id/arrow2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="170dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arrow3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="255dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/arrow4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="340dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/arrow5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="425dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arrow6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="510dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/arrow7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="595dp"
+                    app:srcCompat="@drawable/arrow"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="750dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+
+            android:layout_weight="0.55">
+
+            <Button
+                android:id="@+id/Imageview_home"
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/home_icon"
+                android:clickable="true" />
+
+
+            <Button
+                android:id="@+id/amenities"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/amenities" />
+
+            <Button
+                android:id="@+id/dining"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+
+                android:background="@drawable/dining" />
+
+
+            <Button
+                android:id="@+id/events"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:background="@drawable/events" />
+
+
+            <Button
+                android:id="@+id/floors"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:background="@drawable/floors" />
+
+            <Button
+                android:id="@+id/info"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:background="@drawable/info" />
+
+
+            <Button
+                android:id="@+id/search_name"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:background="@drawable/search_by_name" />
+
+            <Button
+                android:id="@+id/search_category"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:background="@drawable/search_by_category" />
+            <Button
+                android:id="@+id/admin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@drawable/admin" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight=".90 ">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="M3M COSMOPOLITAN MALL"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="45dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/fragment1"
+        android:visibility="gone"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
